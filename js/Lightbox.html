@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="lightbox.css">
+</head>
+<body>
+    <div>
+        <ul>
+            <a href="#Home"><li>Home</li></a>
+            <a href="#Gallery"><li>Gallery</li></a>
+            <a href="#contact"><li>Reservations</li></a>
+    </ul>
+</div>
+
+<div class="gallery">
+    <img src="image1.jpg" alt="Image 1" onclick="openLightbox('image1.jpg')">
+    <img src="image2.jpg" alt="Image 2" onclick="openLightbox('image2.jpg')">
+    <img src="image3.jpg" alt="Image 3" onclick="openLightbox('image3.jpg')">
+    <img src="image4.jpg" alt="Image 4" onclick="openLightbox('image4.jpg')">
+</div>
+<div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="Lightbox Image">
+</div>
+</div>
+<form action="" method="get">
+    First name:<input type="text" name="First_Name"><br>
+    Last name: <input type="text" name="Last_Name"><br>
+    Email:  <input type="email" name="Email"><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+<script src="lightbox.js"></script>
+</body>
+</html>
